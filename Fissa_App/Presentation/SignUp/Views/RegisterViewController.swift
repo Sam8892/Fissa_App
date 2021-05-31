@@ -29,6 +29,7 @@ class RegisterViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         setUInavBar()
     }
     
@@ -40,7 +41,8 @@ class RegisterViewController: UIViewController  {
     // hide line bar
     self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
     self.navigationController?.navigationBar.shadowImage = UIImage()
-    //change color background to navBar
+ 
+        //change color background to navBar
     self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.4527142644, green: 0.272441268, blue: 0.7359890342, alpha: 1)
     // add text to navBar and change color
     self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
@@ -100,4 +102,15 @@ class RegisterViewController: UIViewController  {
     }
 
     
+}
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

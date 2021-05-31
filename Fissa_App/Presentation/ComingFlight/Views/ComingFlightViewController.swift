@@ -7,11 +7,11 @@
 //
 
 import UIKit
-
+import SideMenu
 class ComingFlightViewController: UIViewController {
 
     var viewModel: ComingFlightsViewModel?
-
+    var  menu : UISideMenuNavigationController!
     @IBOutlet weak var flightTableView: UITableView!
     
     override func viewDidLoad() {
@@ -22,14 +22,33 @@ class ComingFlightViewController: UIViewController {
                 self?.flightTableView.reloadData()
             }
         }
-        
         viewModel?.searchFlightsWithdates()
-     
         
+        sideMenuConfig()
         setupUINavigation()
         initTableView()
         // Do any additional setup after loading the view.
     }
+    
+      func sideMenuConfig(){
+          menu = .init(rootViewController:SideMenuViewController.initFromNib() )
+         
+          menu.leftSide = true
+          menu.isNavigationBarHidden = true
+          menu.menuWidth = view.bounds.width * 0.7
+          SideMenuManager.default.menuLeftNavigationController = menu
+          SideMenuManager.default.menuFadeStatusBar = false
+          SideMenuManager.default.menuAddPanGestureToPresent(toView: view)
+          SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: view , forMenu: .left)
+      }
+      
+      
+      @objc func SideMenuButton() {
+          print("Button SideMenu Tapped...")
+       present(menu , animated: true, completion: {})
+          
+      }
+      
     func setupUINavigation () {
         //NavBar
         self.navigationController?.navigationBar.isHidden = false
@@ -48,10 +67,10 @@ class ComingFlightViewController: UIViewController {
         let rightIcon = UIImage(named: "searchBar")?.withRenderingMode(.alwaysOriginal)
         
         self.navigationItem.leftBarButtonItem  = UIBarButtonItem(image: leftIcon, style: .plain, target: self, action: #selector(SideMenuButton))
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: rightIcon, style: .plain, target: self, action: #selector(SideMenuButton))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: rightIcon, style: .plain, target: self, action: #selector(iconSearchTapped))
     }
     
-    @objc func SideMenuButton() {
+    @objc func iconSearchTapped() {
         print("Button SearchADS Tapped  ...")
         
         let searchFlightView = SearchComingFlightVC.initFromNib()

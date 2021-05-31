@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,13 +35,13 @@
                             <rect key="frame" x="0.0" y="0.0" width="412" height="1283"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvT-b8-epc">
-                                    <rect key="frame" x="0.0" y="20" width="412" height="315.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="412" height="335.5"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7dZ-76-un1">
-                                            <rect key="frame" x="20" y="20" width="372" height="275.5"/>
+                                            <rect key="frame" x="20" y="20" width="372" height="295.5"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sx1-QE-K9z" customClass="DLRadioButton">
-                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="78.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="85"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <state key="normal" title="Je veux envoyer un colis">
                                                         <color key="titleColor" red="0.08383814245" green="0.24199688429999999" blue="0.44959640499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,7 +69,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwm-CS-56a" customClass="DLRadioButton">
-                                                    <rect key="frame" x="0.0" y="98.5" width="372" height="78.5"/>
+                                                    <rect key="frame" x="0.0" y="105" width="372" height="85.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <state key="normal" title="Je veux annoncer mon voyage">
                                                         <color key="titleColor" red="0.08383814245" green="0.24199688429999999" blue="0.44959640499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -101,7 +99,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrA-8O-Xpb" userLabel="je veux envoyer un colis" customClass="DLRadioButton">
-                                                    <rect key="frame" x="0.0" y="197" width="372" height="78.5"/>
+                                                    <rect key="frame" x="0.0" y="210.5" width="372" height="85"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <state key="normal" title="Je veux acheter et recevoir un produit">
                                                         <color key="titleColor" red="0.08383814245" green="0.24199688429999999" blue="0.44959640499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -181,16 +179,15 @@
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2021-06-13" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mZB-gw-mOI">
                                                     <rect key="frame" x="201" y="0.0" width="171" height="50"/>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="0I9-xt-GCC"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="qo8-jA-4t9" firstAttribute="width" secondItem="mZB-gw-mOI" secondAttribute="width" id="zLZ-05-ZA9"/>
                                             </constraints>
-                                            <viewLayoutGuide key="safeArea" id="0I9-xt-GCC"/>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GdX-ff-tYE">
                                             <rect key="frame" x="0.0" y="107" width="372" height="17"/>
@@ -251,16 +248,15 @@
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tunis" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="00c-Lg-9jP">
                                                     <rect key="frame" x="201" y="0.0" width="171" height="50"/>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <viewLayoutGuide key="safeArea" id="jUu-qT-KRE"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="ax6-DX-ZNv" firstAttribute="width" secondItem="00c-Lg-9jP" secondAttribute="width" id="Wxt-Qg-t9E"/>
                                             </constraints>
-                                            <viewLayoutGuide key="safeArea" id="jUu-qT-KRE"/>
                                         </stackView>
                                     </subviews>
                                     <viewLayoutGuide key="safeArea" id="Hi2-Ob-0DJ"/>
@@ -550,16 +546,15 @@
                                                         </textField>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1a2-Fp-7Ho" customClass="DropDown" customModule="iOSDropDown">
                                                             <rect key="frame" x="201" y="0.0" width="171" height="50"/>
-                                                            <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <viewLayoutGuide key="safeArea" id="v4q-7e-Ehz"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="cdj-Fx-9wt" firstAttribute="width" secondItem="1a2-Fp-7Ho" secondAttribute="width" id="CZq-hS-ExF"/>
                                                     </constraints>
-                                                    <viewLayoutGuide key="safeArea" id="v4q-7e-Ehz"/>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XeG-z0-ZQ6">
                                                     <rect key="frame" x="0.0" y="262.5" width="372" height="17"/>
@@ -622,7 +617,6 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="wbr-jS-YJg"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -687,6 +681,7 @@
                                             </constraints>
                                         </stackView>
                                     </subviews>
+                                    <viewLayoutGuide key="safeArea" id="89j-pw-TSb"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="VHT-YB-Rz6" firstAttribute="top" secondItem="1Q9-af-jHE" secondAttribute="top" id="DwY-N3-9DF"/>
@@ -694,9 +689,8 @@
                                         <constraint firstItem="VHT-YB-Rz6" firstAttribute="leading" secondItem="1Q9-af-jHE" secondAttribute="leading" constant="20" id="fbK-nw-shb"/>
                                         <constraint firstAttribute="trailing" secondItem="VHT-YB-Rz6" secondAttribute="trailing" constant="20" id="rvL-49-RjQ"/>
                                     </constraints>
-                                    <viewLayoutGuide key="safeArea" id="89j-pw-TSb"/>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLg-CV-aSm">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLg-CV-aSm">
                                     <rect key="frame" x="20" y="1213" width="372" height="50"/>
                                     <color key="backgroundColor" red="0.129917264" green="0.81003779170000001" blue="0.7670921087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
@@ -708,6 +702,7 @@
                                     </connections>
                                 </button>
                             </subviews>
+                            <viewLayoutGuide key="safeArea" id="2kb-09-qkD"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="bvT-b8-epc" firstAttribute="top" secondItem="2kb-09-qkD" secondAttribute="top" id="3z7-bd-anb"/>
@@ -724,7 +719,6 @@
                                 <constraint firstAttribute="trailing" secondItem="1Q9-af-jHE" secondAttribute="trailing" id="oZZ-8j-y2Z"/>
                                 <constraint firstItem="1Q9-af-jHE" firstAttribute="top" secondItem="lCg-bF-EFC" secondAttribute="bottom" constant="20" id="wHh-q7-aQ8"/>
                             </constraints>
-                            <viewLayoutGuide key="safeArea" id="2kb-09-qkD"/>
                         </view>
                     </subviews>
                     <constraints>
@@ -737,6 +731,7 @@
                     </constraints>
                 </scrollView>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="aSZ-q6-4lW" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="iEi-WS-EnU"/>
@@ -745,20 +740,19 @@
                 <constraint firstItem="aSZ-q6-4lW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sel-pc-nuY"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="174.40000000000001" y="232.53373313343329"/>
         </view>
     </objects>
     <resources>
-        <image name="align-left-solid" width="18" height="18"/>
-        <image name="arrows-alt-h-solid" width="20" height="8"/>
-        <image name="boxes-solid" width="16" height="14"/>
-        <image name="boxes-solid-2" width="36" height="32"/>
+        <image name="align-left-solid" width="18.5" height="18.5"/>
+        <image name="arrows-alt-h-solid" width="20" height="8.5"/>
+        <image name="boxes-solid" width="16.5" height="14.5"/>
+        <image name="boxes-solid-2" width="36.5" height="32.5"/>
         <image name="calendar-day-solid" width="14" height="16"/>
         <image name="image-solid" width="19" height="14"/>
         <image name="plane-arrival-solid" width="20" height="16"/>
         <image name="plane-departure-solid" width="20" height="15"/>
-        <image name="tag-solid" width="15" height="15"/>
+        <image name="tag-solid" width="15.5" height="15.5"/>
         <image name="téléchargement (2)" width="225" height="225"/>
         <image name="truck-loading-solid" width="40" height="32"/>
     </resources>

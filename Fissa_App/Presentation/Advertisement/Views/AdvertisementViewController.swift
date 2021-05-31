@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import SideMenu
 
 class AdvertisementViewController: UIViewController {
     
-    
+    var menu : UISideMenuNavigationController!
     
     var  viewModel: AdvertisementViewModel?
     @IBOutlet weak var advertTableView: UITableView!
@@ -32,6 +33,7 @@ class AdvertisementViewController: UIViewController {
     }*/
     override func viewDidLoad() {
         super.viewDidLoad()
+          sideMenuConfig()
         setupUINavigation()
         initTableView()
         tabBarController?.tabBar.isHidden = false
@@ -44,8 +46,26 @@ class AdvertisementViewController: UIViewController {
         
        viewModel?.getAllAds()
     }
-
     
+    
+      func sideMenuConfig(){
+          menu = .init(rootViewController:SideMenuViewController.initFromNib() )
+         
+          menu.leftSide = true
+          menu.isNavigationBarHidden = true
+          menu.menuWidth = view.bounds.width * 0.7
+          SideMenuManager.default.menuLeftNavigationController = menu
+          SideMenuManager.default.menuFadeStatusBar = false
+          SideMenuManager.default.menuAddPanGestureToPresent(toView: view)
+          SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: view , forMenu: .left)
+      }
+      
+      
+      @objc func SideMenuButton() {
+          print("Button SideMenu Tapped...")
+       present(menu , animated: true, completion: {})
+          
+      }
     func setupUINavigation () {
         //NavBar
         self.navigationController?.navigationBar.isHidden = false
@@ -64,10 +84,10 @@ class AdvertisementViewController: UIViewController {
         let rightIcon = UIImage(named: "searchBar")?.withRenderingMode(.alwaysOriginal)
 
         self.navigationItem.leftBarButtonItem  = UIBarButtonItem(image: leftIcon, style: .plain, target: self, action: #selector(SideMenuButton))
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: rightIcon, style: .plain, target: self, action: #selector(SideMenuButton))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: rightIcon, style: .plain, target: self, action: #selector(searchAdsTapped))
     }
     
-    @objc func SideMenuButton() {
+    @objc func searchAdsTapped() {
         print("Button SearchADS Tapped  ...")
      
         let searchAdsView = SearchAdvertisementVC.initFromNib()

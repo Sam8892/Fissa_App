@@ -16,10 +16,9 @@ class DatabaseManager {
     let db = Firestore.firestore()
     
 
-    func addToList (firstName: String, lastName :String ,email: String , password : String, /*dateOfBirth : Date,*/ description : String , adress : String , city : String, country : String){
-        let users : [String :Any] = [firstName: firstName, lastName :lastName ,email: email , password : password, /*dateOfBirth : Date,*/  description : description , adress : adress , city : city, country : country]
-
-        db.collection("cities").document("LA").setData(users)
+    func addToList (firstName: String, lastName :String ,email: String ){
+      
+        db.collection("cities").document("LA").setData(["firstName": firstName, "lastName" :lastName ,"email": email])
                  { (err) in
             if err != nil{
                 print("User Added to firestore")
@@ -44,7 +43,24 @@ class DatabaseManager {
 }
     
    
-    
 }
 
 
+
+ public struct City: Codable {
+
+     let name: String
+     let state: String?
+     let country: String?
+     let isCapital: Bool?
+     let population: Int64?
+
+     enum CodingKeys: String, CodingKey {
+         case name
+         case state
+         case country
+         case isCapital = "capital"
+         case population
+     }
+
+ }

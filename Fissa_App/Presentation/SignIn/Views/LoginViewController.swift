@@ -115,6 +115,8 @@ class LoginViewController: UIViewController , GIDSignInDelegate  , GIDSignInUIDe
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
+        setUInavBar()
+        
         self.setupLabelTap()
         
         self.tabBarController?.tabBar.isHidden = true
@@ -122,8 +124,21 @@ class LoginViewController: UIViewController , GIDSignInDelegate  , GIDSignInUIDe
 
         
     }
+    func setUInavBar () {
+    //show navBar
+    self.navigationController?.navigationBar.isHidden = false
+    self.navigationController?.navigationBar.isTranslucent = false
+    // hide line bar
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+    self.navigationController?.navigationBar.shadowImage = UIImage()
+ 
+        //change color background to navBar
+    self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.4527142644, green: 0.272441268, blue: 0.7359890342, alpha: 1)
+    // add text to navBar and change color
+    self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    self.navigationItem.title = "Connexion"
     
-    
+    }
     func setupLabelTap() {
         
         let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.labelTapped(_:)))

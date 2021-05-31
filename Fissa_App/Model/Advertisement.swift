@@ -51,7 +51,7 @@ struct Parcel: Codable {
     }
 }
 
-/******/
+
 // MARK: - SearchFightsRequest
 struct SearchFlightsRequest: Codable {
     let date, destination, departure: String
@@ -142,14 +142,14 @@ struct CreatedBy: Codable {
 
 /********************* Top Flights ********/
 
-// MARK: - UpComingFlightsResponse
+// MARK: - TopFlightsResponse
 struct TopFlightsResponse: Codable {
     let flights: [TopFlight]
 }
 
 // MARK: - Flight
 struct TopFlight: Codable {
-    let departure, destination: String
+    let departure, destination , place: String
     let count: Int
 }
 

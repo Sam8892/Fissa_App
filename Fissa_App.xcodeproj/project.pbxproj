@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37FAE25B265D432E009D0D1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37FAE25A265D432E009D0D1A /* GoogleService-Info.plist */; };
 		7609B41626100C810002A907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7609B41526100C810002A907 /* Assets.xcassets */; };
 		7609B4192611DC500002A907 /* TopRoutesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609B4172611DC500002A907 /* TopRoutesCollectionViewCell.swift */; };
 		7609B41A2611DC500002A907 /* TopRoutesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7609B4182611DC500002A907 /* TopRoutesCollectionViewCell.xib */; };
@@ -40,7 +41,6 @@
 		76A32B07264B5BFF00836BC1 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A32B06264B5BFF00836BC1 /* AlertService.swift */; };
 		76A32B09264F2C8700836BC1 /* CreateAdvertisementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A32B08264F2C8700836BC1 /* CreateAdvertisementViewModel.swift */; };
 		76A363222657F5A400A00F3A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A363212657F5A400A00F3A /* DatabaseManager.swift */; };
-		76A36324265BEE8C00A00F3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76A36323265BEE8C00A00F3A /* GoogleService-Info.plist */; };
 		76A999F52608FC45000F62BB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A999F32608FC45000F62BB /* TabBarController.swift */; };
 		76A999F62608FC45000F62BB /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A999F42608FC45000F62BB /* TabBarController.xib */; };
 		76AA6E14264169E400989AA1 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA6E13264169E400989AA1 /* APIError.swift */; };
@@ -81,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		13BD7E5D1FC68660B4CCC7E6 /* Pods_Fissa_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fissa_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37FAE25A265D432E009D0D1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		545238351E6297387FBFEF8E /* Pods-Fissa_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fissa_AppTests.release.xcconfig"; path = "Target Support Files/Pods-Fissa_AppTests/Pods-Fissa_AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		7609B41526100C810002A907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7609B4172611DC500002A907 /* TopRoutesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRoutesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -115,7 +116,6 @@
 		76A32B06264B5BFF00836BC1 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		76A32B08264F2C8700836BC1 /* CreateAdvertisementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAdvertisementViewModel.swift; sourceTree = "<group>"; };
 		76A363212657F5A400A00F3A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		76A36323265BEE8C00A00F3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		76A999F32608FC45000F62BB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		76A999F42608FC45000F62BB /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
 		76AA6E13264169E400989AA1 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -629,7 +629,7 @@
 				76EA8D3E25E90252006C31D3 /* Main.storyboard */,
 				76EA8D4325E90256006C31D3 /* LaunchScreen.storyboard */,
 				76EA8D4625E90256006C31D3 /* Info.plist */,
-				76A36323265BEE8C00A00F3A /* GoogleService-Info.plist */,
+				37FAE25A265D432E009D0D1A /* GoogleService-Info.plist */,
 			);
 			path = Fissa_App;
 			sourceTree = "<group>";
@@ -748,7 +748,7 @@
 				7615A48526331C5400EDCE7D /* ComingFlightViewController.xib in Resources */,
 				7633A8D225FFAC6C00E48AC4 /* RegisterViewController.xib in Resources */,
 				76EA8D4525E90256006C31D3 /* LaunchScreen.storyboard in Resources */,
-				76A36324265BEE8C00A00F3A /* GoogleService-Info.plist in Resources */,
+				37FAE25B265D432E009D0D1A /* GoogleService-Info.plist in Resources */,
 				76A999F62608FC45000F62BB /* TabBarController.xib in Resources */,
 				76C02619260CF02400261AA9 /* TransactionVC.xib in Resources */,
 				76F276452633598F006FD772 /* ComingFlightTableViewCell.xib in Resources */,

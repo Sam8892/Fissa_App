@@ -45,6 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController()
         var mainVC = UIViewController()
         if let isLogged = DefaultUtils.sharedInstance.isLoggedIn, isLogged {
+            
             mainVC = TabBarController.initFromNib()
             self.window?.rootViewController = mainVC
             

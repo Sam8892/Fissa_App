@@ -53,7 +53,6 @@ class AdvertTableViewCell: UITableViewCell {
     
     func setLayerContainerImg () {
         imgContainerView.layer.shadowColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-        
         imgContainerView.layer.shadowOffset = CGSize(width: 0, height: 0.0)
         imgContainerView.layer.shadowOpacity =  25
         imgContainerView.layer.shadowRadius = 12.0

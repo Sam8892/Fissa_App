@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="316" height="164"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="316" height="163.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="316" height="164"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKe-uk-YTy">
@@ -61,22 +59,22 @@
                                         <rect key="frame" x="0.0" y="44.5" width="81" height="29"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconDepCV" translatesAutoresizingMaskIntoConstraints="NO" id="4d4-mg-UMP">
-                                                <rect key="frame" x="0.0" y="0.0" width="10" height="29"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="8" height="29"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="10" id="Chn-6I-WNC"/>
+                                                    <constraint firstAttribute="width" constant="8" id="Chn-6I-WNC"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0j1-mU-AUG">
-                                                <rect key="frame" x="15" y="0.0" width="66" height="29"/>
+                                                <rect key="frame" x="13" y="0.0" width="68" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angouleme" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5p-G5-09L">
-                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="12"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="68" height="12"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <color key="textColor" red="0.08383814245" green="0.24199688429999999" blue="0.44959640499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bordeaux" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xg3-Ec-49j">
-                                                        <rect key="frame" x="0.0" y="17" width="66" height="12"/>
+                                                        <rect key="frame" x="0.0" y="17" width="68" height="12"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                         <color key="textColor" red="0.08383814245" green="0.24199688429999999" blue="0.44959640499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -105,7 +103,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="vsE-ur-xFK">
-                                <rect key="frame" x="247.5" y="16" width="20.5" height="14.5"/>
+                                <rect key="frame" x="247" y="16" width="21" height="14.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKg-an-PPe">
                                         <rect key="frame" x="0.0" y="0.0" width="7.5" height="14.5"/>
@@ -114,7 +112,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-solid" translatesAutoresizingMaskIntoConstraints="NO" id="GMO-Ua-WpE">
-                                        <rect key="frame" x="10.5" y="0.0" width="10" height="14.5"/>
+                                        <rect key="frame" x="10.5" y="0.0" width="10.5" height="14.5"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -222,6 +220,6 @@
     <resources>
         <image name="icon-profil" width="23" height="23"/>
         <image name="iconDepCV" width="5" height="21"/>
-        <image name="star-solid" width="10" height="10"/>
+        <image name="star-solid" width="10.5" height="10"/>
     </resources>
 </document>
